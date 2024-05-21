@@ -1,0 +1,14 @@
+import { {{name}}Props } from './types';
+import { render } from '@testing-library/react';
+
+import {{name}} from '.';
+
+const makeSut = ({}: {{name}}Props) => {
+	render(<{{name}} />);
+};
+
+describe('{{name}} test suit', () => {
+	it('should render component', () => {
+		makeSut({});
+	});
+});
